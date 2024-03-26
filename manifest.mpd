@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" profiles="urn:mpeg:dash:profile:isoff-live:2011" minBufferTime="PT10.18S" mediaPresentationDuration="PT1H33M56.631S" type="static">
+  <!-- by mamalon -->
+  <Period>
+    <!-- Video -->
+    <AdaptationSet mimeType="video/mp4" segmentAlignment="true" startWithSAP="1" maxWidth="1920" maxHeight="1080">
+      <SegmentTemplate timescale="90000" initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1">
+        <SegmentTimeline>
+          <S d="915914"/>
+          <S d="915915" r="551"/>
+          <S d="795794"/>
+        </SegmentTimeline>
+      </SegmentTemplate>
+      <Representation id="video/avc1" codecs="avc1.4D4028" width="1920" height="1080" scanType="progressive" frameRate="1012004/42209" bandwidth="3077718"/>
+    </AdaptationSet>
+    <!-- Audio -->
+    <AdaptationSet mimeType="audio/mp4" startWithSAP="1" segmentAlignment="true">
+      <SegmentTemplate timescale="48000" initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1">
+        <SegmentTimeline>
+          <S d="488448" r="11"/>
+          <S d="489472"/>
+          <S d="488448" r="24"/>
+          <S d="489472"/>
+          <S d="488448" r="24"/>
+          <S d="489472"/>
+          <S d="488448" r="23"/>
+          <S d="489472"/>
+          <S d="488448" r="24"/>
+          <S d="489472"/>
+          <S d="488448" r="23"/>
+          <S d="489472"/>
+          <S d="488448" r="24"/>
+          <S d="489472"/>
+          <S d="488448" r="24"/>
+          <S d="489472"/>
+          <S d="488448" r="23"/>
+          <S d="489472"/>
+          <S d="488448" r="24"/>
+          <S d="489472"/>
+          <S d="488448" r="23"/>
+          <S d="489472"/>
+          <S d="488448" r="24"/>
+          <S d="489472"/>
+          <S d="488448" r="24"/>
+          <S d="489472"/>
+          <S d="488448" r="23"/>
+          <S d="489472"/>
+          <S d="488448" r="24"/>
+          <S d="489472"/>
+          <S d="488448" r="23"/>
+          <S d="489472"/>
+          <S d="488448" r="24"/>
+          <S d="489472"/>
+          <S d="488448" r="24"/>
+          <S d="489472"/>
+          <S d="488448" r="23"/>
+          <S d="489472"/>
+          <S d="488448" r="24"/>
+          <S d="489472"/>
+          <S d="488448" r="23"/>
+          <S d="489472"/>
+          <S d="488448" r="24"/>
+          <S d="489472"/>
+          <S d="488448" r="1"/>
+          <S d="423936"/>
+          <S d="50176"/>
+        </SegmentTimeline>
+      </SegmentTemplate>
+      <Representation id="audio/und/mp4a.40.2" codecs="mp4a.40.2" bandwidth="162761" audioSamplingRate="48000">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:mpegB:cicp:ChannelConfiguration" value="2"/>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
